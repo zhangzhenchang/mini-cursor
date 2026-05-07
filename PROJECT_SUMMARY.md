@@ -1,4 +1,4 @@
-# Mini Cursor CLI - Python 版本
+# Mini Cursor - Python 版本
 
 一个基于 Python 和 LangChain 的 AI 驱动项目管理助手，成功从 JavaScript 版本迁移而来。
 
@@ -17,7 +17,7 @@
 ## 📁 项目结构
 
 ```
-mini-cursor-cli/
+mini-cursor/
 ├── src/
 │   ├── __init__.py          # 包初始化
 │   ├── tools.py             # 工具定义（4个工具）
@@ -48,19 +48,23 @@ mini-cursor-cli/
 ## 🎯 测试结果
 
 ### 测试 1: 简单任务 ✅
+
 ```bash
 uv run python test_mini.py
 ```
+
 - 成功列出目录
 - 成功创建 hello.txt 文件
 - Agent 正确完成任务
 
 ### 测试 2: 完整 React 应用 ✅
+
 ```bash
 uv run python src/mini_cursor.py
 ```
 
 **执行的操作：**
+
 1. ✅ 创建 Vite + React + TypeScript 项目
 2. ✅ 写入完整的 App.tsx（TodoList 功能）
    - 添加、删除、编辑、标记完成
@@ -97,29 +101,35 @@ uv run python src/mini_cursor.py
 ## 📝 使用方法
 
 ### 安装依赖
+
 ```bash
 uv sync
 ```
 
 ### 运行主程序
+
 ```bash
 uv run python src/mini_cursor.py
 ```
 
 ### 自定义任务
+
 编辑 `src/mini_cursor.py` 中的 `CASE1` 变量，定义你的任务。
 
 ## 🐛 调试经验
 
 ### 问题 1: 模型不调用工具
+
 **原因：** qwen-coder-turbo 倾向于输出文本描述而不是调用工具  
 **解决：** 切换到 qwen-plus 模型
 
 ### 问题 2: [REDACTED]过于复杂
+
 **原因：** 过长的提示词让模型困惑  
 **解决：** 简化提示词，保持核心规则
 
 ### 问��� 3: 工具调用验证
+
 **方法：** 创建简单测试脚本验证工具调用是否工作
 
 ## 📦 依赖项
@@ -141,11 +151,12 @@ dependencies = [
 ✅ 模块化设计  
 ✅ 环境变量管理  
 ✅ 错误处理  
-✅ 清晰的命名  
+✅ 清晰的命名
 
 ## �� 下一步
 
 可以扩展的功能：
+
 - 添加更多工具（git 操作、API 调用等）
 - 支持多轮对话
 - 添加日志记录

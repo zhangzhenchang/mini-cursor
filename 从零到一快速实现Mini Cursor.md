@@ -62,7 +62,7 @@ Cursor 的核心能力来自于 **Tool Calling（工具调用）**。
 首先创建项目结构：
 
 ```
-mini-cursor-cli/
+mini-cursor/
 ├── src/
 │   ├── __init__.py          # 包初始化
 │   ├── tools.py             # 工具定义

@@ -1,1 +1,1 @@
-"""Mini Cursor CLI - AI-powered project management assistant."""
+"""Mini Cursor - AI-powered project management assistant."""

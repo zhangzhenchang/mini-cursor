@@ -38,7 +38,11 @@ uv.lock
 *~
 
 # Environment variables
+.env
 .env.local
+
+# Claude settings
+.claude/
 
 # OS
 .DS_Store

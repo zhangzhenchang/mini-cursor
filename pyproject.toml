@@ -1,5 +1,5 @@
 [project]
-name = "mini-cursor-cli"
+name = "mini-cursor"
 version = "0.1.0"
 description = "A Python-based AI agent for project management tasks"
 readme = "README.md"

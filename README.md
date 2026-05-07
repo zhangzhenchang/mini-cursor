@@ -52,7 +52,7 @@ uv run python test_quick.py
 ## 项目结构
 
 ```
-mini-cursor-cli/
+mini-cursor/
 ├── src/
 │   ├── __init__.py          # 包初始化
 │   ├── tools.py             # 工具定义（文件操作、命令执行等）

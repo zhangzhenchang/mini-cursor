@@ -1,13 +1,15 @@
-# Mini Cursor CLI - 使用指南
+# Mini Cursor - 使用指南
 
 ## 快速开始
 
 ### 1. 安装依赖
+
 ```bash
 uv sync
 ```
 
 ### 2. 运行测试
+
 ```bash
 # 快速测试（创建 test.txt）
 uv run python test_quick.py
@@ -31,16 +33,19 @@ CASE1 = """你的任务描述：
 ## 可用工具
 
 1. **read_file** - 读取文件
+
    ```python
    read_file(file_path="path/to/file.txt")
    ```
 
 2. **write_file** - 写入文件
+
    ```python
    write_file(file_path="path/to/file.txt", content="内容")
    ```
 
 3. **execute_command** - 执行命令
+
    ```python
    execute_command(command="ls -la", working_directory="./project")
    ```
@@ -59,10 +64,13 @@ CASE1 = """你的任务描述：
 ## 故障排除
 
 ### 模型不调用工具
+
 确保 `.env` 中使用 `MODEL_NAME=qwen-plus`
 
 ### 导入错误
+
 确保使用 `uv run` 而不是直接 `python`
 
 ### 工具调用失败
+
 检查工具参数是否正确，查看控制台输出
