@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\(package\\\\.json|\\\\.mjs$|\\\\.js$\\)\")",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
