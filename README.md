@@ -1,4 +1,4 @@
-# Mini Cursor CLI
+# Mini Cursor
 
 一个基于 Python 和 LangChain 的 Mini Cursor 实现，能够自动执行文件操作、命令执行等任务。
 
